@@ -69,7 +69,10 @@ p.text {
     transition: 0.3s ease;
     border-radius: 6px;
 }
-
+.hidden .popap_block .info_block{
+    margin-top: 30px;
+    padding: 0 30px;
+}
 .hidden img.close {
     position: absolute;
     top: 3%;
@@ -107,4 +110,16 @@ p.price span.number:before {
     font-size: 12px;
     top: 0;
     left: -10px;
+}
+
+@media (max-width: 768px){
+    .hidden .popap_block {
+        margin: 0 auto;
+        margin-top: 50%;
+    }
+}
+@media (max-width: 480px){
+    .hidden .popap_block {
+        width: 330px;
+    }
 }
